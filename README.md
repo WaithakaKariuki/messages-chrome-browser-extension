@@ -56,7 +56,7 @@
 #### High priority
 ![](public/images/img4.png)
 
-#### Notifications badge
+#### Notifications badge(With notification sound)
 ![](public/images/img5.png)
 
 #### Search
