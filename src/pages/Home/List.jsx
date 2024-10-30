@@ -50,7 +50,7 @@ const List = memo(function List({messageState}) {
   }, []);
 
   //update the messages
-  function handleUpdateMessage(updatedMessage) {
+  const handleUpdateMessage = useCallback((updatedMessage)=>{
     const updateMessages = messages.map((message) => {
       if (message.id === updatedMessage.id) {
         return updatedMessage;
@@ -60,7 +60,7 @@ const List = memo(function List({messageState}) {
     });
     chrome.storage.local.set({ "apiData": updateMessages });
     setMessages(updateMessages)
-  }
+  },[])
 
   const transformMessages = useCallback(()=>{
     let sortedMessages = messages;
