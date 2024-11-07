@@ -33,6 +33,7 @@
 3. Extension Architecture
 - Uses Chrome storage API to persist message state
 - Implements a background script to check for new messages periodically
+- Plays notification sounds via active tabs and content script
 - Handles different states: loading, error, no messages, unread messages
 
 4. It incorporates:
