@@ -2,6 +2,7 @@
 
 ## Features
 - Shows a badge icon when there are unread messages
+- Dynamically injects content script to play notification sounds
 - Displays messages in a popup when the extension icon is clicked
 - Allows users to mark messages as read
 - Stores message history locally
